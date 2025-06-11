@@ -1,0 +1,5 @@
+/home/gabrielmachine/Documentos/RTOS/Pratica01/build/_deps/picotool/picotool
+/home/gabrielmachine/Documentos/RTOS/Pratica01/build/_deps/picotool/picotoolTargets.cmake
+/home/gabrielmachine/Documentos/RTOS/Pratica01/build/_deps/picotool/picotoolTargets-release.cmake
+/home/gabrielmachine/Documentos/RTOS/Pratica01/build/_deps/picotool/picotoolConfig.cmake
+/home/gabrielmachine/Documentos/RTOS/Pratica01/build/_deps/picotool/picotoolConfigVersion.cmake

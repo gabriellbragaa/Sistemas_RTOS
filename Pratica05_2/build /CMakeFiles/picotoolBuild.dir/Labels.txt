@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /CMakeFiles/picotoolBuild
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /CMakeFiles/picotoolBuild.rule
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /CMakeFiles/picotoolBuild-complete.rule
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+/home/gabrielmachine/Documentos/RTOS/Pratica05_2/build /picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule

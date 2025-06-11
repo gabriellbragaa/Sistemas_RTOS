@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/CMakeFiles/picotoolBuild"
+		},
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/CMakeFiles/picotoolBuild.rule"
+		},
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/CMakeFiles/picotoolBuild-complete.rule"
+		},
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule"
+		},
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule"
+		},
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule"
+		},
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule"
+		},
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule"
+		},
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule"
+		},
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule"
+		},
+		{
+			"file" : "/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/src/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"picotoolBuild"
+		],
+		"name" : "picotoolBuild"
+	}
+}

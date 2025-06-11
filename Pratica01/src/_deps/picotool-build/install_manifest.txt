@@ -1,0 +1,5 @@
+/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/_deps/picotool/picotool
+/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/_deps/picotool/picotoolTargets.cmake
+/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/_deps/picotool/picotoolTargets-release.cmake
+/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/_deps/picotool/picotoolConfig.cmake
+/home/gabrielmachine/Downloads/RTS-main/labs/lab_01/src/_deps/picotool/picotoolConfigVersion.cmake
