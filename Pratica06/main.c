@@ -11,11 +11,12 @@
 #define ADC_PIN (26 + ADC_NUM )
 
 SemaphoreHandle_t mutex;
+uint8_t cont = 0;
 
 // estrutura global
 
 typedef struct {
-    int16_t potenciometro;
+    int16_t otenciometro;p
 
 } AccelerometerData;
 
@@ -25,8 +26,6 @@ void lendoAccele( AccelerometerData* data){
     data-> potenciometro = adc_read();
     
 }
-
-
 
 void vTaskLerPotenciometro(void *pvParameters) {
 
@@ -39,23 +38,54 @@ void vTaskLerPotenciometro(void *pvParameters) {
             
             xSemaphoreGive(mutex);
         }
-        vTaskDelay(pdMS_TO_TICKS(100));
+        vTaskDelay(pdMS_TO_TICKS(50));
+    }
+}
+
+void vTaskSimulartest(void *pvParameters) {
+    uint8_t cont = 0;
+    float voltage =0;
+
+    for (;;) {
+        if (xSemaphoreTake(mutex, portMAX_DELAY)) {
+            cont++;
+            if(accelData.potenciometro < 4095){
+            accelData.potenciometro += 3;
+            } // somente incrementar para teste
+            uint16_t resultado = adc_read();
+            voltage = resultado * 3.3f / (1 << 12) ; 
+            printf("Recurso [ %d ] Potenciometro %.2fv e ADC: %d\n" , cont , voltage,  accelData.potenciometro);   
+            xSemaphoreGive(mutex);
+        }
+        if(cont > 100){
+        vTaskDelete(NULL);
+    }
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
 
 
 void vTaskMostrarConteudo(void *pvParameters) {
+    
+    uint8_t cont = 0;
+    float voltage = 0;
+    uint16_t resultado = adc_read();
 
     for(;;)
      {
+
         if(xSemaphoreTake(mutex, portMAX_DELAY)) {
-            
-             printf("Potenciometro: %d\n", accelData.potenciometro);   
+             cont ++;
+             uint16_t resultado = adc_read();
+             voltage = resultado * 3.3f / (1 << 12) ; 
+             printf("Recurso [ %d ] Potenciometro: %.2fv ADC: %d\n", cont , voltage, accelData.potenciometro);   
             
             xSemaphoreGive(mutex);
         }
-        vTaskDelay(pdMS_TO_TICKS(500));
+       
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
+    
 }
 
 
@@ -65,7 +95,7 @@ int main() {
     stdio_init_all();
 
 
-    // Potentiometer Config
+    
     adc_init();
     adc_gpio_init(ADC_PIN);
     adc_select_input(ADC_NUM);
@@ -76,8 +106,11 @@ int main() {
     
     xTaskCreate(vTaskLerPotenciometro, "Potenciometro", 256, NULL, 2, NULL);
     xTaskCreate(vTaskMostrarConteudo, "dados", 256, NULL, 1, NULL);
+    xTaskCreate(vTaskSimulartest, "Simulador", 256, NULL, 1, NULL);
 
     
     vTaskStartScheduler();
 
 }
+
+/// ACEITO
